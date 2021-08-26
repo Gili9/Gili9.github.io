@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Slideshow Gallery</title>
+</head>
+<body>
+<div class="container">
+    <div class="mySlides">
+        <img src="images/pexels-mike-218673.jpg">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/pexels-pixabay-73909.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/pexels-pixabay-220201.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/pexels-pixabay-41951.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/pexels-flickr-148275.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/pexels-alessio-cesario-1906830.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/pexels-krish-chaitu-6145852.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/pexels-jonas-ferlin-1938032.jpg" style="width:50%">
+    </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>  
+
+<div class="title-container">
+    <p id="title"></p>
+</div>
+<div class="description">
+ <blockquote><p id="des"></p></blockquote>
+</div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <img src="images/pexels-mike-218673.jpg" class="small-img" 
+        onclick="currentSlide(1)" title="Yellow Leafed Tree" 
+        alt="A beautiful nature photo by...">
+    </div>
+    <div class="column">
+        <img src="images/pexels-pixabay-73909.jpg" class="small-img" 
+        onclick="currentSlide(2)" title="Grayscale Photo of Explosion on the Beach" 
+        alt="Bells have tolled in Hiroshima, Japan,...">
+    </div>
+    <div class="column">
+        <img src="images/pexels-pixabay-220201.jpg" class="small-img" 
+        onclick="currentSlide(3)" title="Planet Earth" 
+        alt="Earth, our home planet, is a world...">
+    </div>
+    <div class="column">
+        <img src="images/pexels-pixabay-41951.jpg" class="small-img" 
+        onclick="currentSlide(4)" title="Red and Orange Galaxy Illustration" 
+        alt="What Is a Nebula?...">
+    </div>
+    <div class="column">
+        <img src="images/pexels-flickr-148275.jpg" class="small-img" 
+        onclick="currentSlide(5)" title="Gray Owl Showing Orange and Black Left Eye"
+        alt="Owl eyes are so big they can’t move...">
+    </div>
+    <div class="column">
+        <img src="images/pexels-alessio-cesario-1906830.jpg" class="small-img" 
+        onclick="currentSlide(6)" title="Selective Focus Portrait Photo of Woman Posing"
+        alt="Women leaders across every industry...">
+    </div>
+    <div class="column">
+        <img src="images/pexels-krish-chaitu-6145852.jpg" class="small-img" 
+        onclick="currentSlide(7)" title="Black and Brown Lantern on Table"
+        alt="A candle burns until all the wax is gone. ...">
+    </div>
+    <div class="column">
+        <img src="images/pexels-jonas-ferlin-1938032.jpg" class="small-img" 
+        onclick="currentSlide(8)" title="Orange Parasol"
+        alt="Ask true beach lovers to name a favorite...">
+    </div>
+</div>
+   
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
